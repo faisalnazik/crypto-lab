@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import re
+
 # Importing pandas as pd
 import pandas as pd
 
