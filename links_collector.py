@@ -1,12 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
 import re
-
 # Importing pandas as pd
 import pandas as pd
 
 df = pd.DataFrame()
-
 url = "https://www.house.gov/representatives" 
 text = requests.get(url).text
 soup = BeautifulSoup(text, "html5lib")
@@ -26,7 +24,6 @@ assert re.match(regex, "https://joel.house.gov/")
 assert not re.match(regex, "joel.house.gov")
 assert not re.match(regex, "http://joel.house.com")
 assert not re.match(regex, "https://joel.house.gov/biography")
-
 
 # And now apply
 good_urls = [url for url in all_urls if re.match(regex, url)]
