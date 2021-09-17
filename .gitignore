@@ -131,3 +131,4 @@ dmypy.json
 # new
 spam_data
 raw.py
+geckodriver.exe
